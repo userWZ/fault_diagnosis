@@ -1,14 +1,34 @@
-# Bearing-Fault-Diagnosis
-这个仓库包含了几个常用的轴承故障检测算法的实现(Pytorch)，对版本的要求很弱，具体包括如下的内容：
+<!--
+ * @Author: Zihao Wang wzh7076@gmail.com
+ * @Date: 2024-07-19 00:49:07
+ * @LastEditors: Zihao Wang wzh7076@gmail.com
+ * @LastEditTime: 2024-07-19 01:35:44
+ * @FilePath: \Bearing-Fault-Diagnosis\README.md
+ * @Description: 
+ * 
+-->
+# Fault-Diagnosis
 
-- [x] 数据集的读取(现在支持CWRU, hgd数据集) **(Dimensional Alignment should be done in further versions)**
-- [x] 标准CNN进行轴承故障检测的实现
-- [x] TICNN进行轴承故障检测的实现
-- [x] WDCNN进行轴承故障检测的实现
-- [x] MSCNN进行轴承故障检测的实现
-- [ ] MSAFCN进行轴承故障检测实现
-- [ ] DTTL进行轴承故障检测实现
-- [ ] DANN进行轴承故障检测实现
-- [ ] DDC进行轴承故障检测实现
-- [x] 模型的保存
-- [x] 几种测试指标的计算(准确率、召回率、F1分数等)
+This repository is an framework for Fault-Diagnosis based on DeepLearning 
+
+
+## Features
+- [x] Supports reading multiple datasets, with built-in dataloader (currently includes CWRU, PU, HGD datasets).
+- [x] Implements various fault diagnosis networks (including WDCNN, MIXCNN, MSCNN, etc.).
+- [x] Provides a wide range of metric calculation methods (include acc, recall, f1, etc).
+- [x] Offers various methods for classification visualization (include t-sne, Distribution histogram, Confusion matrices, Roc curve).
+- [x] Implements flexible configuration of experiments based on Hydra.
+- [x] Supports multi-GPU training.
+- [x] Provides robust solutions for network continuation.
+- [x] Integrates with TensorBoard or Weights & Biases for training monitoring.
+
+## Usage
+
+## Hydra
+
+## Data
+
+## Training
+
+### Multi-GPU
+
