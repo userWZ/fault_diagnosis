@@ -1,0 +1,32 @@
+defaults:
+  - _self_
+  - experiment: cwru_1DCNN
+
+train:
+  name: null
+  epochs: 100
+  ckpt_epoch: max
+  save_freq: 10
+  eval_freq: 10
+  logging_freq: 1
+  print_freq: 10
+  batch_size: 32
+  learning_rate: 2e-4
+  optimizer: Adam
+  loss: cross_entropy
+  metrics: [accuracy]
+
+  seed: 600
+  use_gpu: true
+  momentum: 0.9
+  beta: 0.999
+  weitght_decay: 0
+
+wandb:
+  mode: disabled # Pass in 'wandb.mode=online' to turn on wandb logging
+  project: cwru_1DCNN
+  entity: null
+  id: null # Set to string to resume logging from run
+  job_type: training
+
+

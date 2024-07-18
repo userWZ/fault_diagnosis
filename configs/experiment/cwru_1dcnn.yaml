@@ -1,0 +1,4 @@
+default: 
+ - /model: 1dcnn
+ - /dataset: cwru
+

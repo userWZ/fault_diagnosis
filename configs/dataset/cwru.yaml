@@ -1,0 +1,8 @@
+_name_: cwru
+data_dir:  [data/cwru/0HP, data/cwru/1HP, data/cwru/2HP, data/cwru/3HP]
+data_length: 1024
+stride: 200
+num_samples: 600
+test_size: 0.2
+validate_size: 0.2
+scale: true
